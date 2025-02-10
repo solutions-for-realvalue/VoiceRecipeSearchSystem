@@ -15,5 +15,21 @@ function recipeInfoFetch(recipeSelected) {
 
   const requestUrl = "https://api.spoonacular.com/recipes/" + queryId + "/information?" + AUTH;
 
-  
+  fetchData(requestUrl).then(data => {
+    
+    // once fetch responds with data then run this code:
+    idSearchResponse = data;
+    console.log(data) // TODO comment when no longer needed
+
+    // The recipe Summary has some links and details that needs to be left out of the text
+
+    
+  });
+}
+
+// here we pass the url we want to call from API and await until fetch responds
+async function fetchData(requestUrl) {
+  const fetcher = await fetch(requestUrl);
+  const data = await fetcher.json();
+  return data;
 }
