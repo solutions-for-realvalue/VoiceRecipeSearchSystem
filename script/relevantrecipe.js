@@ -45,32 +45,39 @@ function recipeInfoFetch(recipeSelected) {
       `<li>${item.original}</li>`
     )).join('')}`;
 
-  // console.log(ingredientRecipe) // TODO comment when confirm that gets correct ingredients
-  $('.previous-searches').removeClass('hide');
-  // $('.title-before-cards').addClass('hide');
+    // console.log(ingredientRecipe) // TODO comment when confirm that gets correct ingredients
+    $('.previous-searches').removeClass('hide');
+    // $('.title-before-cards').addClass('hide');
 
-  // create html element for recipe selected with
-    // title, image, summary, servings, ingredients and instructions
-    let recipeShow = `
-    <div class="row">
-      <div class="col">
-        <div class="recipe-details-box rounded">
-          <h2 class="recipe-title" id="title">${idSearchResponse.title}</h2>
-          <img class="recipe-img" src="${idSearchResponse.image}">
-          <p class="recipe-details"><b>Summary:</b></p>
-          <p id="servings">${textBeforeStoppingPoint}</p>
-          <p class="recipe-details"><b>Servings:</b></p>
-          <p id="servings">${idSearchResponse.servings}</p>
-          <p class="recipe-details"><b>Ingredients:</b></p>
-          <ul id="ingredients">${ingredientRecipe}</ul>
-          <p class="recipe-details"><b>Instructions:</b></p>
-          <p id="instruction">${idSearchResponse.instructions}</p>
+    // create html element for recipe selected with
+      // title, image, summary, servings, ingredients and instructions
+      let recipeShow = `
+      <div class="row">
+        <div class="col">
+          <div class="recipe-details-box rounded">
+            <h2 class="recipe-title" id="title">${idSearchResponse.title}</h2>
+            <img class="recipe-img" src="${idSearchResponse.image}">
+            <p class="recipe-details"><b>Summary:</b></p>
+            <p id="servings">${textBeforeStoppingPoint}</p>
+            <p class="recipe-details"><b>Servings:</b></p>
+            <p id="servings">${idSearchResponse.servings}</p>
+            <p class="recipe-details"><b>Ingredients:</b></p>
+            <ul id="ingredients">${ingredientRecipe}</ul>
+            <p class="recipe-details"><b>Instructions:</b></p>
+            <p id="instruction">${idSearchResponse.instructions}</p>
+          </div>
         </div>
       </div>
-    </div>
-    `;
+      `;
 
+    // add recipe display to html code below search box
+    $("#recipeResultsList").append(recipeShow);
 
+    // get recipes (id, image and title) from local storage
+    var storedData = JSON.parse(localStorage.getItem("recipeData"));
+    // console.log(storedData); // TODO get recipes stored local storage, can comment when done testing
+
+    
 
   });
 }
