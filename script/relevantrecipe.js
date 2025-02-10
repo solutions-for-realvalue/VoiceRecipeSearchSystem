@@ -32,6 +32,16 @@ function recipeInfoFetch(recipeSelected) {
     // manipulated recipe Summary
     var textBeforeStoppingPoint = stoppingPointIndex1 !== -1 ? summaryWithoutLinks.substring(0, stoppingPointIndex1) : summaryWithoutLinks;
     
+    summaryWithoutLinks = textBeforeStoppingPoint; // do it again for last modified text
+    var stoppingPointText2 = 'Similar recipes';
+    var stoppingPointIndex2 = summaryWithoutLinks.indexOf(stoppingPointText2); // location of the text from where it needs to be removed
+    // manipulated recipe Summary
+    var textBeforeStoppingPoint = stoppingPointIndex2 !== -1 ? summaryWithoutLinks.substring(0, stoppingPointIndex2) : summaryWithoutLinks;
+
+    // console.log(textBeforeStoppingPoint) // TODO comment when confirm that gets correct summary
+
+
+
   });
 }
 
