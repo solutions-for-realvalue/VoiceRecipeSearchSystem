@@ -77,7 +77,20 @@ function recipeInfoFetch(recipeSelected) {
     var storedData = JSON.parse(localStorage.getItem("recipeData"));
     // console.log(storedData); // TODO get recipes stored local storage, can comment when done testing
 
+    for (let index = 0; index < storedData.length; index++) {
     
+      // created card into html for previous search and add recipe picture and title
+      var recipeCard = `
+        <div class="previous-searches-${index}" id="previous-searches-${index}">
+          <div class="card previous-searches">
+            <img class="previous-searches-img" src="${storedData[index].image}">
+            <div class="card-body">
+                <h5 class="card-title">${storedData[index].title}</h5>
+                <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      `;
 
   });
 }
