@@ -23,6 +23,14 @@ function recipeInfoFetch(recipeSelected) {
 
     // The recipe Summary has some links and details that needs to be left out of the text
 
+    // Remove <a> tags from the summary
+    let summaryWithoutLinks = idSearchResponse.summary.replace(/<a\b[^>]*>(.*?)<\/a>/g, ''); // Regex to replace it
+
+    // Define the stopping point text
+    var stoppingPointText1 = 'If you like this recipe';
+    var stoppingPointIndex1 = summaryWithoutLinks.indexOf(stoppingPointText1); // location of the text from where it needs to be removed
+    // manipulated recipe Summary
+    var textBeforeStoppingPoint = stoppingPointIndex1 !== -1 ? summaryWithoutLinks.substring(0, stoppingPointIndex1) : summaryWithoutLinks;
     
   });
 }
