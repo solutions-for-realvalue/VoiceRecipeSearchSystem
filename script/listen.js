@@ -53,6 +53,13 @@ function recordRecipe() {
         // potential matches that should be returned per result.
         recognition.maxAlternatives = 1;
     
+        // the speech recognition service start
+        recognition.start();
+        console.log("Start recording voice"); // TODO to comment when done testing
+
+        // clear the text result on the page
+        $("#response").text("");
+
         
         
     } else {
