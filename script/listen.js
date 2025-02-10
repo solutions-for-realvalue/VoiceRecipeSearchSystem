@@ -60,6 +60,24 @@ function recordRecipe() {
         // clear the text result on the page
         $("#response").text("");
 
+        // Once the speech recognition is started,
+        // handle the result of speech recognition
+        recognition.onresult = (event) => {
+            const recognizedSpeech = event.results[0][0].transcript;
+            console.log("Speech Recognition Result:", recognizedSpeech);
+
+            // set to result of speech recognition to glabal variable
+            userRequest = recognizedSpeech;
+
+            // Display the recognized text on the page
+            $("#exampleFormControlTextarea1").text(recognizedSpeech);
+
+            // understand recipe
+            // console.log(userRequest.length) // TODO to comment when done testing
+            if (userRequest.length > 0) {// don't return anything for empty string
+            getUserRecipe(userRequest);
+            }
+        };
         
         
     } else {
