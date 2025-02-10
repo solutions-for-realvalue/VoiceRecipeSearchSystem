@@ -92,6 +92,18 @@ function recipeInfoFetch(recipeSelected) {
         </div>
       `;
 
+    
+      // set class index for previous search card
+      let indexClick = `.previous-searches-${index}`;
+      // Here adding a click event listener to the card
+      $(indexClick).on('click', function() {
+          // The click event handling for recipe
+          console.log(`Card ${index + 1} clicked, with id ${storedData[index].id} on previous recipe ${storedData[index].title}!`)
+          // when click on card for previous search load recipe to display it
+          recipeInfoFetch(storedData[index].id); 
+      });
+    }
+
   });
 }
 
