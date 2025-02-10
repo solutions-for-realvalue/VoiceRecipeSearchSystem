@@ -40,7 +40,18 @@ function recipeInfoFetch(recipeSelected) {
 
     // console.log(textBeforeStoppingPoint) // TODO comment when confirm that gets correct summary
 
+    // gather ingredients from JSON idSearchResponse.extendedIngredients object list in items called 'original'
+    let ingredientRecipe = `${idSearchResponse.extendedIngredients.map((item, index) => (
+      `<li>${item.original}</li>`
+    )).join('')}`;
 
+  // console.log(ingredientRecipe) // TODO comment when confirm that gets correct ingredients
+  $('.previous-searches').removeClass('hide');
+  // $('.title-before-cards').addClass('hide');
+
+
+
+  
 
   });
 }
