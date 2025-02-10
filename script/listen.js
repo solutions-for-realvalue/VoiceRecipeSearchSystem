@@ -14,3 +14,20 @@ const SpeechGrammarList =
 const SpeechRecognitionEvent =
   window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
 
+// add listeners for record audio
+$("#record-btn").click(function () {
+  $(".form-control").text('');
+  recordRecipe();
+});
+
+// add global variable for recognized speech
+// to use the result of userRequest on understand.js
+let userRequest = ""; // intitialize it
+
+// record voice audio for recipe using  Web Speech API
+// provides: speech recognition, and speech synthesis
+// https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
+function recordRecipe() {
+
+    
+}
