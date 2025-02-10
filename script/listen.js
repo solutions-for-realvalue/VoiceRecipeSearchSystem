@@ -78,7 +78,16 @@ function recordRecipe() {
             getUserRecipe(userRequest);
             }
         };
-        
+        // handling recognition of audio
+        recognition.onnomatch = (event) => {
+            diagnostic.textContent = "I didn't recognize the recipe.";
+        };
+
+        // the error event handles cases where there is an actual error
+        // with the recognition successfully
+        recognition.onerror = (event) => {
+            diagnostic.textContent = `Error occurred in recognition: ${event.error}`;
+        };
         
     } else {
         // Error state: provides user with feedback about the issue then
