@@ -49,9 +49,28 @@ function recipeInfoFetch(recipeSelected) {
   $('.previous-searches').removeClass('hide');
   // $('.title-before-cards').addClass('hide');
 
+  // create html element for recipe selected with
+    // title, image, summary, servings, ingredients and instructions
+    let recipeShow = `
+    <div class="row">
+      <div class="col">
+        <div class="recipe-details-box rounded">
+          <h2 class="recipe-title" id="title">${idSearchResponse.title}</h2>
+          <img class="recipe-img" src="${idSearchResponse.image}">
+          <p class="recipe-details"><b>Summary:</b></p>
+          <p id="servings">${textBeforeStoppingPoint}</p>
+          <p class="recipe-details"><b>Servings:</b></p>
+          <p id="servings">${idSearchResponse.servings}</p>
+          <p class="recipe-details"><b>Ingredients:</b></p>
+          <ul id="ingredients">${ingredientRecipe}</ul>
+          <p class="recipe-details"><b>Instructions:</b></p>
+          <p id="instruction">${idSearchResponse.instructions}</p>
+        </div>
+      </div>
+    </div>
+    `;
 
 
-  
 
   });
 }
