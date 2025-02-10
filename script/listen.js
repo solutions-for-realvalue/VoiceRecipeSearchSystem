@@ -29,5 +29,18 @@ let userRequest = ""; // intitialize it
 // https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition
 function recordRecipe() {
 
+    // check for web speech API and show user error if not supported
+    if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
+        // define a speech recognition instance to control
+        //  the recognition for our application
+        const recognition = new SpeechRecognition();
+        const speechRecognitionList = new SpeechGrammarList();
     
+        
+        
+    } else {
+        // Error state: provides user with feedback about the issue then
+        // transition to the "listening state" for the next user input
+        console.error("Web Speech API is not supported in this browser.");
+    }
 }
