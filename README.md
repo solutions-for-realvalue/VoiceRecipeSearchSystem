@@ -35,3 +35,11 @@ Here’s the refactored **README** for the **Voice Recipe Search System** reposi
 
 ---
 
+## 🌟 Overview
+
+The **Voice Recipe Search System** is a voice-enabled web application that allows users to search for recipes using natural language voice commands. With **JavaScript, jQuery, Web APIs, and Wit.ai**, this system understands user requests, processes spoken inputs, and fetches recipes from the **Spoonacular API**.
+
+Users can speak into their device's microphone, specify ingredients or dish preferences, and instantly receive personalized recipe suggestions.
+
+---
+
