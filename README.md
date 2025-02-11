@@ -43,3 +43,22 @@ Users can speak into their device's microphone, specify ingredients or dish pref
 
 ---
 
+## 🚀 Features
+
+- **🎤 Voice Recognition** – Uses the Web Speech API for hands-free recipe searching.
+- **🧠 AI-Powered NLP** – Wit.ai interprets user intent to extract relevant search parameters.
+- **🔍 Recipe Search** – Connects to the **Spoonacular API** for real-time recipe retrieval.
+- **🖥️ User-Friendly Interface** – A clean, intuitive UI ensures smooth interaction.
+- **📖 Multiple Recipe Options** – Presents a variety of recipe choices based on voice queries.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript, jQuery
+- **Voice Processing**: Web Speech API
+- **Natural Language Processing**: [Wit.ai](https://wit.ai/)
+- **Recipe Database**: [Spoonacular API](https://spoonacular.com/food-api/docs)
+
+---
+
