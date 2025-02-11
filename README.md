@@ -19,4 +19,19 @@ Here’s the refactored **README** for the **Voice Recipe Search System** reposi
 
 ---
 
+## 📖 Table of Contents
+
+- [Overview](#-overview)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Getting Started](#-getting-started)
+- [Usage](#-usage)
+- [Recipe Intent Recognition with Wit.ai](#-recipe-intent-recognition-with-witai)
+- [Wit.ai Concepts: Intents, Entities & Traits](#-witai-concepts-intents-entities--traits)
+- [Spoonacular API Search Queries](#-spoonacular-api-search-queries)
+- [State Flow Diagram](#-state-flow-diagram)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
 
