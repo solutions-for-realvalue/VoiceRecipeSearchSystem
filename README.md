@@ -62,3 +62,21 @@ Users can speak into their device's microphone, specify ingredients or dish pref
 
 ---
 
+## 📦 Getting Started
+
+### Clone the Repository:
+
+```bash
+git clone https://github.com/solutions-for-realvalue/VoiceRecipeSearchSystem.git
+```
+
+### Open the Project:
+
+```bash
+cd VoiceRecipeSearchSystem
+```
+
+Then, open the `index.html` file in a web browser.
+
+---
+
