@@ -93,3 +93,19 @@ You can visit the live demo: **[Voice Recipe Search System](https://solutions-fo
 3. The system will process the command and display recipe suggestions.
 4. Click on a recipe to see ingredients, instructions, and servings.
 
+#### 🖼️ Screenshots
+
+**Voice Recognition in Action**
+  
+![Voice Search](https://github.com/naturuplift/voice-recipe-search-system/assets/23546356/f67e767d-c732-4c42-ad5f-414dac6ac2d6)
+
+**Recipe Results**
+  
+![Recipe Results](https://github.com/naturuplift/voice-recipe-search-system/assets/23546356/f4ac2269-0c72-409f-b161-eb832f8e37d1)
+
+**Detailed Recipe View**
+  
+![Recipe Details](https://github.com/naturuplift/voice-recipe-search-system/assets/23546356/6c378ad7-0de4-43b7-92bc-08b33d57539d)
+
+---
+
