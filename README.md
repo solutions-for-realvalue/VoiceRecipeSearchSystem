@@ -80,3 +80,16 @@ Then, open the `index.html` file in a web browser.
 
 ---
 
+## 🎯 Usage
+
+You can visit the live demo: **[Voice Recipe Search System](https://solutions-for-realvalue.github.io/VoiceRecipeSearchSystem/)**
+
+### 🗣️ Using the Voice Search:
+
+1. Click the **"Start Voice Search"** button.
+2. Speak a command like:
+   - *"Find recipes for chicken curry."*
+   - *"How do I make pasta carbonara?"*
+3. The system will process the command and display recipe suggestions.
+4. Click on a recipe to see ingredients, instructions, and servings.
+
