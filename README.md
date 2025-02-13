@@ -109,3 +109,14 @@ You can visit the live demo: **[Voice Recipe Search System](https://solutions-fo
 
 ---
 
+## 🤖 Recipe Intent Recognition with Wit.ai
+
+To train the AI model:
+
+1. **Create a Wit.ai Account**: [Sign up here](https://wit.ai/)
+2. **Set Up Intents**: Train the AI model with different user inputs.
+3. **Define Entities**: Extract ingredients, dish names, and cuisine types.
+4. **Deploy & Integrate**: Connect Wit.ai with JavaScript to process user voice commands.
+
+---
+
