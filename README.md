@@ -154,3 +154,24 @@ For a step-by-step breakdown of the **Voice Recipe Search System**, refer to the
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome! Follow these steps:
+
+1. **Fork the repository**.
+2. **Create a feature branch**:  
+   ```bash
+   git checkout -b feature-new-feature
+   ```
+3. **Commit your changes**:  
+   ```bash
+   git commit -m "Added new feature"
+   ```
+4. **Push your branch**:  
+   ```bash
+   git push origin feature-new-feature
+   ```
+5. **Open a pull request**.
+
+---
+
