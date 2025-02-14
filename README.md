@@ -148,4 +148,9 @@ We mapped user intents from Wit.ai to Spoonacular API calls:
 
 ---
 
+## 🏗️ State Flow Diagram
+
+For a step-by-step breakdown of the **Voice Recipe Search System**, refer to the **[State Flow Diagram](https://github.com/solutions-for-realvalue/VoiceRecipeSearchSystem/blob/main/assets/img/State%20Diagram%20Recipe%20Search%20v1.png)**.
+
+---
 
