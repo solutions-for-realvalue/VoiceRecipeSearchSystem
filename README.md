@@ -175,3 +175,15 @@ Contributions are welcome! Follow these steps:
 
 ---
 
+## 📜 License
+
+This project is licensed under the [MIT License](https://github.com/solutions-for-realvalue/VoiceRecipeSearchSystem/blob/main/LICENSE).
+
+---
+
+## 📧 Contact
+
+For any questions about this project, please contact me via:
+
+- **Email**: [natureuplift@protonmail.com](mailto:natureuplift@protonmail.com)
+- **LinkedIn**: [Arnaldo Sepulveda](https://www.linkedin.com/in/arnaldo-sepulveda)
