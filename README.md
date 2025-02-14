@@ -120,3 +120,19 @@ To train the AI model:
 
 ---
 
+## 🔍 Wit.ai Concepts: Intents, Entities & Traits
+
+| **Concept** | **Definition** | **Example** |
+|------------|--------------|------------|
+| **Intent** | The user's goal or action. | *"Find me a recipe for spaghetti Bolognese."* |
+| **Entity** | Specific details extracted from speech. | `{dish: "spaghetti Bolognese"}` |
+| **Trait** | Attributes that modify the intent. | `{difficultyLevel: "easy"}` |
+
+✔ **Example Use Case**  
+*User says: "Find me an easy recipe for chicken curry."*
+- **Intent Detected**: `GetRecipe`
+- **Entities Extracted**: `{dish: "chicken curry"}`
+- **Traits Identified**: `{difficultyLevel: "easy"}`
+
+---
+
