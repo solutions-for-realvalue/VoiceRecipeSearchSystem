@@ -136,3 +136,16 @@ To train the AI model:
 
 ---
 
+## 🔗 Spoonacular API Search Queries
+
+We mapped user intents from Wit.ai to Spoonacular API calls:
+
+| **Intent** | **API Endpoint** | **Method** |
+|-----------|----------------|------------|
+| GetRecipe | `https://api.spoonacular.com/recipes/complexSearch` | GET |
+| GetRecipeByIngredient | `https://api.spoonacular.com/recipes/findByIngredients` | GET |
+| GetRandomRecipe | `https://api.spoonacular.com/recipes/random` | GET |
+
+---
+
+
