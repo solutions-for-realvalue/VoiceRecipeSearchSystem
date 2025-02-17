@@ -62,3 +62,19 @@
     border-color: rgba(255, 136, 102, 0.67);
     padding: 30px;
   }
+
+/* padding for class 'recipeResultsList' */
+
+/* Display, margin, border for class 'recipe-img' */
+.recipe-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid rgba(255, 136, 102, 0.67);
+  }
+  
+  /* Font size, padding for class 'recipe-details' */
+  .recipe-details {
+    font-size: 20px;
+    padding-top: 10px;
+  }
