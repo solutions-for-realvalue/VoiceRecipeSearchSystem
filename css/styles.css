@@ -21,3 +21,24 @@
     );
     padding: 30px;
   }
+
+  /* display for class 'hide' */
+.hide {
+    display: none;
+  }
+  
+  /* text align for h1, h2 */
+  h1,
+  h2 {
+    text-align: center;
+  }
+  
+  /* font size for class 'previous-searches-size' */
+  .previous-searches-size {
+    font-size: small;
+  }
+  
+  /* text align for class 'form-group' */
+  .form-group {
+    text-align: center;
+  }
