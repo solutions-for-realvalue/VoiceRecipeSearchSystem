@@ -42,3 +42,23 @@
   .form-group {
     text-align: center;
   }
+
+  /* padding for class 'row' */
+.row {
+    padding: 15px;
+  }
+  
+  /* display, justify content, align items, padding for class 'col' */
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  /* padding, border style & color for class 'recipeResultsList' */
+  .recipeResultsList {
+    border-style: ridge;
+    border-color: rgba(255, 136, 102, 0.67);
+    padding: 30px;
+  }
