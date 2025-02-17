@@ -1,0 +1,23 @@
+/* Width, display, margin for class 'logo' */
+.logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* bg color, padding for class 'jumbotronBackground' */
+  .jumbotronBackground {
+    background: white;
+    padding: 20px;
+  }
+  
+  /* bg, padding for class 'container' */
+  .container {
+    background: linear-gradient(
+      44.8deg,
+      rgba(255, 136, 102, 0.67) -53.1%,
+      rgba(255, 221, 136, 0.28) 49%
+    );
+    padding: 30px;
+  }
