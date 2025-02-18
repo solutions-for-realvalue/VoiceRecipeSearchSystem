@@ -1,7 +1,3 @@
-Here’s the refactored **README** for the **Voice Recipe Search System** repository. This version improves readability, structure, and clarity while maintaining all the necessary details.
-
----
-
 # 🍽️ Voice Recipe Search System  
 
 <br/>
