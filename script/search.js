@@ -82,6 +82,11 @@ function getRecipeList(userRecipeList){
     });
 }
 
-
+// here we pass the url we want to call from API and await until fetch responds
+async function fetchData(url) {
+    const fetcher = await fetch(url)
+    const data = await fetcher.json();
+    return data;
+}
 
 
