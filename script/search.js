@@ -124,7 +124,16 @@ function getRecipeByIngredients(userIngredientsList){
                 </div>
             `;
 
-            
+            $("#recipeResultsList").append(recipeCard);
+
+            let indexClick = `.recipe-${index}`;
+            // Here adding a click event listener to the card
+            $(indexClick).on('click', function() {
+                // The click event handling for recipe
+                console.log(`Card ${index + 1} clicked, with id ${recipeSearchResponse[index].id} on recipe ${recipeSearchResponse[index].title}!`)
+                // call recipe fetch in relevantrecipe'js to show recipe to user
+                recipeInfoFetch(recipeSearchResponse[index].id);
+            });
         }
     });
 
