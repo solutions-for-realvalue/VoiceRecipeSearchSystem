@@ -111,6 +111,19 @@ function getRecipeByIngredients(userIngredientsList){
 
         for (let index = 0; index < recipeSearchResponse.length; index++) {
 
+            // created card into html and add recipe picture and title
+            var recipeCard = `
+                <div class="col recipe-${index}" id="recipe-${index}">
+                    <div class="card">
+                        <img src="${recipeSearchResponse[index].image}">
+                        <div class="card-body">
+                            <h5 class="card-title">${recipeSearchResponse[index].title}</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
             
         }
     });
