@@ -43,6 +43,14 @@ function getRecipeList(userRecipeList){
         
         // console.log(data); // TODO uncomment to confirm recipes are returned for API recipe query
 
+        // Store data in local storage
+        localStorage.setItem('recipeData', JSON.stringify(recipeSearchResponse.results));
+        $('#recipeResultsList').removeClass('hide');
+
+        // let tilteRecipesFound = `<h2 class="card-title">Recipes Found</h2>`;
+        // $(".title-before-cards").removeClass('hide');
+        // $(".title-before-cards").prepend(tilteRecipesFound);
+
         
 
         
