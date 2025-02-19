@@ -116,5 +116,25 @@
     padding: 15px;
   }
   
-
-
+/* text align, align items, padding, margin, width, height, border for class 'previous-searches' */
+.previous-searches {
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid rgba(255, 136, 102, 0.67);
+  }
+  
+  /* width, height, align items for class 'previous-searches-img' */
+  .previous-searches-img {
+    width: 150px;
+    height: 100px;
+    align-items: center;
+  }
+  
+  /* display for ID 'result-recipe' */
+  #result-recipe {
+    display: none;
+  }
