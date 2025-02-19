@@ -106,7 +106,13 @@ function getRecipeByIngredients(userIngredientsList){
         recipeSearchResponse = data;
         console.log(data);
 
-        
+        // Store data in local storage
+        localStorage.setItem('recipeData', JSON.stringify(recipeSearchResponse));
+
+        for (let index = 0; index < recipeSearchResponse.length; index++) {
+
+            
+        }
     });
 
 
