@@ -89,4 +89,17 @@ async function fetchData(url) {
     return data;
 }
 
+// search for a list of recipes given ingredients in userIngredientsList
+// https://spoonacular.com/food-api/docs#Search-Recipes-by-Ingredients
+function getRecipeByIngredients(userIngredientsList){
 
+    // configure recipe API method and parameters
+    let recipeIngredients = userIngredientsList;
+    let recipeParameters = 'fillIngredients=false&ignorePantry=true';
+    let AUTH = 'apiKey=9cf7f51e45f542c98bb4360739b56ced';
+    const uri = 'https://api.spoonacular.com/recipes/findByIngredients?' + AUTH + '&' + 'ingredients=' + recipeIngredients + '&' + recipeParameters;
+
+    
+
+    
+}
