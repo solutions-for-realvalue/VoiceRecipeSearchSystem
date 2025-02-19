@@ -95,4 +95,26 @@
     cursor: pointer;
     box-shadow: inset 0px 0px 10px rgba(255, 136, 102, 0.67), 0 0 20px rgba(255, 136, 102, 0.67);
   }
+
+/* width, height, align items for class 'card' img */
+.card img {
+    width: 250px;
+    height: 200px;
+    align-items: center;
+  }
   
+  /* bg repeat, bg size, padding for class 'recipe-details-box' */
+  .recipe-details-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+  }
+  
+  /* color, padding for class 'recipe-title' */
+  .recipe-title {
+    color: blank;
+    padding: 15px;
+  }
+  
+
+
