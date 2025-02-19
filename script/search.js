@@ -99,7 +99,15 @@ function getRecipeByIngredients(userIngredientsList){
     let AUTH = 'apiKey=9cf7f51e45f542c98bb4360739b56ced';
     const uri = 'https://api.spoonacular.com/recipes/findByIngredients?' + AUTH + '&' + 'ingredients=' + recipeIngredients + '&' + recipeParameters;
 
-    
+    // console.log(uri)
 
-    
+    fetchData(uri).then(data => {
+        // once fetch respond with data then run this code:
+        recipeSearchResponse = data;
+        console.log(data);
+
+        
+    });
+
+
 }
