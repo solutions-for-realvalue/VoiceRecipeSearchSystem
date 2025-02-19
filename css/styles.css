@@ -78,3 +78,21 @@
     font-size: 20px;
     padding-top: 10px;
   }
+
+  /* Align items, border for class 'card' */
+.card {
+    align-items: center;
+    border: 2px solid rgba(255, 136, 102, 0.67);
+  }
+  
+  /* Border for class 'recipe-details-box' */
+  .recipe-details-box {
+    border: 5px solid rgba(255, 136, 102, 0.67);
+  }
+  
+  /* Adds hover & pointer to class 'card' */
+  .card:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px rgba(255, 136, 102, 0.67), 0 0 20px rgba(255, 136, 102, 0.67);
+  }
+  
