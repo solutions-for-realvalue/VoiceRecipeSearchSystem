@@ -183,7 +183,16 @@ function getRandomRecipe(){
                 </div>
             `;
 
+            $("#recipeResultsList").append(recipeCard);
             
+            let indexClick = `.recipe-${index}`;
+            // Here adding a click event listener to the card
+            $(indexClick).on('click', function() {
+                // The click event handling for recipe
+                console.log(`Card 1 clicked, with id ${recipeSearchResponse.recipes[index].id} on recipe ${recipeSearchResponse.recipes[index].title}!`)
+                // call recipe fetch in relevantrecipe'js to show recipe to user
+                recipeInfoFetch(recipeSearchResponse.recipes[index].id);
+            });
         }
     });
 }
