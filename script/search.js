@@ -165,6 +165,12 @@ function getRandomRecipe(){
             recipeElements.push(recipeElement); // Add the current recipe element to the array
         }
 
-        
+        // Store data in local storage
+        localStorage.setItem('recipeData', JSON.stringify(recipeElements));
+
+        for (let index = 0; index < recipeSearchResponse.recipes.length; index++) {
+
+            
+        }
     });
 }
