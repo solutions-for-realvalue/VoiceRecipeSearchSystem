@@ -136,6 +136,24 @@ function getRecipeByIngredients(userIngredientsList){
             });
         }
     });
+}
 
+// search for a list of recipes with query userRecipeList
+function getRandomRecipe(){
 
+    // configure recipe API method and parameters
+    let number = 'number=6';
+    let AUTH = 'apiKey=9cf7f51e45f542c98bb4360739b56ced';
+    const uri = 'https://api.spoonacular.com/recipes/random?' + AUTH + '&' + number;
+
+    fetchData(uri).then(data => {
+        // once fetch respond with data then run this code:
+        recipeSearchResponse = data;
+        console.log(data);
+
+        // create container element to save to local storage
+        let recipeElements = [];
+
+        
+    });
 }
