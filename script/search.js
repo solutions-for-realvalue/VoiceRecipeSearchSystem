@@ -154,6 +154,17 @@ function getRandomRecipe(){
         // create container element to save to local storage
         let recipeElements = [];
 
+        for (let index = 0; index < recipeSearchResponse.recipes.length; index++) {
+            let recipe = recipeSearchResponse.recipes[index]; // Access the current recipe using the index
+        
+            let recipeElement = {
+                "id": recipe.id,
+                "title": recipe.title,
+                "image": recipe.image
+            };
+            recipeElements.push(recipeElement); // Add the current recipe element to the array
+        }
+
         
     });
 }
