@@ -35,6 +35,24 @@ function recordRecipe() {
         //  the recognition for our application
         const recognition = new SpeechRecognition();
         const speechRecognitionList = new SpeechGrammarList();
+    
+        // SpeechRecognition.continuous: Controls whether continuous
+        //  results are captured (true), or just a single result
+        //  each time recognition is started (false)
+        recognition.continuous = false;
+        // SpeechRecognition.lang: Sets the language of the recognition.
+        //  Setting this is good practice, and therefore recommended.
+        recognition.lang = "en-US";
+        // SpeechRecognition.interimResults: Defines whether the speech
+        //  recognition system should return interim results, or just
+        // final results. Final results are good enough for this simple demo.
+        recognition.interimResults = false;
+        // not using grammar as to not limit speech to specific grammar list
+        recognition.grammars = speechRecognitionList;
+        // SpeechRecognition.maxAlternatives: Sets the number of alternative
+        // potential matches that should be returned per result.
+        recognition.maxAlternatives = 1;
+    
         
     } else {
         // Error state: provides user with feedback about the issue then
