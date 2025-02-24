@@ -38,7 +38,17 @@ function getUserRecipe(userRecipeRequest) {
             return response.json();
         })
     
-    
+    // Understanding state: extract the intent and entities from 
+    // the user's request in wit.ai
+    // That is, turn the message into actionable search query for recipe
+    .then(function(data) {
+        
+        console.log(data)  // TODO to comment when functions working
+
+        userWitSearch = data; // save Wit result to global variable
+
+        
+    });
 }
 
 // if the translation intent is detected via --> search.js
