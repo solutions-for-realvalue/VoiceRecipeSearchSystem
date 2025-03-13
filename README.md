@@ -182,4 +182,3 @@ This project is licensed under the [MIT License](https://github.com/solutions-fo
 For any questions about this project, please contact me via:
 
 - **Email**: [natureuplift@protonmail.com](mailto:natureuplift@protonmail.com)
-- **LinkedIn**: [Arnaldo Sepulveda](https://www.linkedin.com/in/arnaldo-sepulveda)
